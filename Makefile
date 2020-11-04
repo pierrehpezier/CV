@@ -1,7 +1,7 @@
 all: qrcode pdf clean
 
 pdf:
-	convert photo.jpg -define jpeg:extent=512kb photo_compressed.jpg
+	convert photo.jpg -define jpeg:extent=256kb photo_compressed.jpg
 	latexmk -pdf cv.tex
 
 clean:
