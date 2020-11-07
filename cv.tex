@@ -182,9 +182,9 @@
 % Allows complex commands to be passed, too.
 % param 1: *any
 \newcommand{\cvtext}[1] {
-	\begin{tabular*}{1\mpwidth}{p{0.98\mpwidth}}
+	%\begin{tabular*}{1\mpwidth}{p{0.98\mpwidth}}
 		\parbox{1\mpwidth}{#1}
-	\end{tabular*}
+	%\end{tabular*}
 }
 
 %----------------------------------------------------------------------------------------
@@ -243,8 +243,9 @@
 	% if you need more control on page breaks, remove the parbox
 	\parbox{\mpwidth}{
 		\begin{tabular*}{1\mpwidth}{p{0.72\mpwidth}  r}
-	 		\textcolor{black}{\textbf{#2}} & \colorbox{maincol}{\makebox[0.25\mpwidth]{\textcolor{white}{#1}}} \\
-			\textcolor{maincol}{\textbf{#3}} & \\
+	 		% \textcolor{black}{\textbf{#2}} & \colorbox{maincol}{\makebox[0.25\mpwidth]{\textcolor{white}{#1}}} \\
+			% \textcolor{maincol}{\textbf{#3}} & \\
+			\textcolor{maincol}{\textbf{#3}} & \colorbox{maincol}{\makebox[0.25\mpwidth]{\textcolor{white}{#1}}} \\
 		\end{tabular*}\\[8pt]
 	
 		\ifthenelse{\isempty{#4}}{}{
@@ -253,19 +254,20 @@
 	}
 
 	\ifthenelse{\isempty{#5}}{}{
-		\vspace{9pt}
+		%\vspace{9pt}
+		\cvtext{\textbf{\ \ \ Affectation:}}
 		{#5}
 	}
 
 	\ifthenelse{\isempty{#6}}{}{
 		\vspace{9pt}
-		\cvtext{\textbf{Technologies include:}}\\
+		\cvtext{\textbf{\ \ \ Technologies include:}}
 		{#6}
 	}
 
 	\ifthenelse{\isempty{#7}}{}{
 		\vspace{9pt}
-		\cvtext{\textbf{Achievements include:}}\\
+		\cvtext{\textbf{\ \ \ Achievements include:}}
 		{#7}
 	}
 	\vspace{14pt}
@@ -291,7 +293,7 @@
 		\cvtext{{ \textcolor{darkcol} {#3} }}\\
 	}
 	\ifthenelse{\isempty{#4}}{}{
-		\cvtext{#4}\\[14pt]
+		\cvtext{#4}\\
 	}
 }
 
@@ -356,10 +358,13 @@
 \vfill\null
 %\newpage
 \cvsection{CONTACT}
-
+\\
 \icontext{MapMarker}{12}{Elancourt, 78990 France}{black}\\[6pt]
 \icontext{MobilePhone}{12}{(+33) 06 52 62 24 85}{black}\\[6pt]
 \iconemail{Envelope}{12}{pierrehpezier@gmail.com}{pierrehpezier@gmail.com}{black}\\[6pt]
+\icontext{Car}{12}{Driving licence}{black}\\[6pt]
+\icontext{Github}{12}{github.com/pierrehpezier}{black}\\[6pt]
+
 
 \vfill\null
 %\cvqrcode{0.7}
@@ -412,24 +417,24 @@ Now known as INSA CVL. state-recognized diploma) in the IT sec field.
 \cvmetaevent
 {French}
 {Mother tongue}
-{}
+{\\}
 {}
 
-%\vfill
+\vfill
 
-\cvsection{Interest}
+\cvsection{Hobbies}
 
 \cvmetaevent
 {Rugby}
 {}
+{4 years experience as number 7}
 {}
-{4 Years experience as number 7.}
 
 \cvmetaevent
 {DIY}
 {}
+{Wooden toy manufacturing, cars and home renovation}
 {}
-{Wooden toy manufacturing, cars and home renovation.}
 
 \cvmetaevent
 {Music}
@@ -437,7 +442,7 @@ Now known as INSA CVL. state-recognized diploma) in the IT sec field.
 {}
 {7 years of piano}
 
-%\vfill
+\vfill\null
 %\cvqrcode{0.7}
 
 %\newpage
@@ -467,19 +472,20 @@ Now known as INSA CVL. state-recognized diploma) in the IT sec field.
 
 \cvtext{
 	IT Consultant with strong theoretical skills with 10 years experience.\\
-	Security auditor, reverser and developer.
+	Security auditor, reverser and developer.\newline
 }
 
 %---------------------------------------------------------------------------------------
 %	WORK EXPERIENCE
 %----------------------------------------------------------------------------------------
 \vfill\null
+
 \cvsection{WORK EXPERIENCE}
 
 \cvevent
 	{Dec 12 - NOW}
-	{Software auditor}
-	{OPPIDA}
+	{}
+	{\large{Software auditor - OPPIDA}}
 	{}
 	{\cvlist{
 		\item Technical lead of the reverse engineering team
@@ -523,12 +529,12 @@ Now known as INSA CVL. state-recognized diploma) in the IT sec field.
 		\item Secure development, Obfuscation and trojan writing course writing
 	}}
 
-\vfill\null
+%\vfill\null
 \cvevent
 	{Jan 10 - Dec 12}
-	{Software integrator}
-	{Athéos}
-	{Software integration at Athéos, now known as Orange cyberDefense.}
+	{}
+	{\large{Software integrator - Orange Cyberdefense}}
+	{}
 	{\cvlist{
 		\item Identity and Access Management (IAM) systems integrator
 		\item SI Architect
