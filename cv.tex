@@ -151,12 +151,16 @@
 
 % Package for links, must be the last package used
 \usepackage[hidelinks]{hyperref}
+\usepackage{hyperref}
+%\usepackage[pdftex,
+%            pdfauthor={PEZIER Pierre-Henri},
+%            pdftitle={CV},
+%            pdfkeywords={Cybersecurity, Ingineer, Reverse ingeineering}]{hyperref}
 
 % returns minipage width minus two times \fboxsep
 % to keep padding included in width calculations
 % can also be used for other boxes / environments
 \newcommand{\mpwidth}{\linewidth-\fboxsep-\fboxsep}
-	
 
 
 %============================================================================%
@@ -326,6 +330,7 @@
 \colseprulecolor{lightcol}
 \begin{paracol}{2}
 \begin{leftcolumn}
+
 %---------------------------------------------------------------------------------------
 %	META IMAGE
 %----------------------------------------------------------------------------------------
@@ -355,7 +360,7 @@
 
 \cvskill{Hardware Hacking} {4+ yrs} {.7} \\[-2pt]
 
-\vfill\null
+%\vfill\null
 %\newpage
 \cvsection{About me}
 \small{\newline\newline\newline}
@@ -364,7 +369,7 @@
 \iconemail{Envelope}{12}{pierrehpezier@gmail.com}{pierrehpezier@gmail.com}{black}\\[6pt]
 \icontext{Car}{12}{Driving licence}{black}\\[6pt]
 \icontext{Github}{12}{github.com/pierrehpezier}{black}\\[6pt]
-\icontext{Plane}{12}{Brevet Initiation Aéronautique}{black}\\[6pt]
+\icontext{Plane}{12}{Brevet d'Initiation Aéronautique}{black}\\[6pt]
 
 \vfill\null
 %\cvqrcode{0.7}
@@ -438,7 +443,7 @@ Now known as INSA CVL. state-recognized diploma) in the IT sec field.
 
 \cvmetaevent
 {Music}
-{Nantes music Conservatory}
+{Nantes Music Conservatory}
 {}
 {7 years of piano}
 
@@ -492,7 +497,7 @@ Now known as INSA CVL. state-recognized diploma) in the IT sec field.
 	{}
 	{\cvlist{
 		\item Technical lead of the reverse engineering team
-		\item Physical security penetration testing
+		\item Physical penetration testing
 		\item Infrastructure penetration testing
 		\item CSPN/Common criteria evaluator
 		\item PCIDSS mPOS evaluator
@@ -502,6 +507,8 @@ Now known as INSA CVL. state-recognized diploma) in the IT sec field.
 		\item Proprietary protocol reverse engineering
 		\item PCB reverse engineering and probing
 		\item Experienced job interviewer
+		\item Highly experienced report peer reviewer
+		\item Phishing campaigns
 		\item Electrical habilitation (BE Essai)
 	}}
 	{\cvlist {
@@ -530,7 +537,7 @@ Now known as INSA CVL. state-recognized diploma) in the IT sec field.
 		\item Bluetooth MITM tools
 		\item Phishing toolkit
 		\item C++ windows privilege escalation tool
-		\item Secure development, Obfuscation and trojan writing course writing
+		\item Secure development, Obfuscation and Trojan writing course writing
 	}}
 
 \vfill\null
@@ -548,7 +555,7 @@ Now known as INSA CVL. state-recognized diploma) in the IT sec field.
 		\item IBM Tivoli Directory Server (ITDS)
 		\item IBM Tivoli Directory Integrator (ITDI)
 		\item IBM WebSphere
-		\item Java/Javascript plugin development
+		\item Java/JavaScript plugin development
 	}}
 	{\cvlist{
 		\item Full integration for a SI of more than 2000 users
